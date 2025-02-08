@@ -1,1 +1,1 @@
-This si the website of Dr. Manav Diagnostic Center !
+This is the website of Dr. Manav Diagnostic Center !
