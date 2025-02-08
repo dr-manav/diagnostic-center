@@ -32,7 +32,7 @@
             max-width: 1200px;
             margin: auto;
             padding: 40px;
-            background-image:url("background.png");
+            background: url("background.png");
             border-radius: 10px;
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
         }
@@ -46,7 +46,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 20px;
+            padding:20px;
         }
         .service-box {
             background: #eef7ff;
@@ -74,10 +74,8 @@
             padding: 5px 10px;
             border-radius: 5px;
             font-weight: bold;
-            position: absolute;
-            top: 10px;
-            right: 10px;
             animation: pulse 1.5s infinite;
+            width: 20%;
         }
         @keyframes pulse {
             0% { transform: scale(1); }
@@ -85,19 +83,19 @@
             100% { transform: scale(1); }
         }
         .open-status {
-            background-color:white;
             text-align: center;
             font-size: 20px;
             font-weight: bold;
             margin-top: 20px;
             padding: 10px;
             border-radius: 5px;
+            background-color: white;
         }
         .open {
             color: green;
         }
         .closed {
-            color: red;
+            color: green;
         }
         footer {
             background: #0056b3;
@@ -117,6 +115,35 @@
         .contact i {
             margin-right: 8px;
         }
+
+        .green{
+            background-color:lightgreen;
+        }
+
+        .blue{
+            background-color: blue;
+            color: white;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .dg{
+            background-color: darkgreen;
+            color: white;
+        }
+
+        .lb{
+            background-color: dodgerblue;
+        }
+
+        .ly{
+            background-color: lightgoldenrodyellow;
+        }
+
+        .s{
+            background-color: goldenrod;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -124,35 +151,56 @@
     <div class="container">
         <h2>Our Services</h2>
         <div class="services">
-            <div class="service-box">CT Scan</div>
-            <div class="service-box">Ultrasonography</div>
-            <div class="service-box">Color Doppler</div>
-            <div class="service-box">3D/4D Ultrasound</div>
-            <div class="service-box">Level 2 Scan</div>
-            <div class="service-box">2D/3D Echo</div>
-            <div class="service-box">ECG</div>
-            <div class="service-box">Dental OPG</div>
-            <div class="service-box">Dental CBCT</div>
-            <div class="service-box">Sono-mammography</div>
-            <div class="service-box">Digital X-rays</div>
-            <div class="service-box">HSG</div>
-            <div class="service-box">IVP</div>
-            <div class="service-box">Barium</div>
-            <div class="service-box">Lab Tests</div>
+            <div class="service-box green">Whole body CT Scan</div>
+            <div class="service-box blue">Ultrasonography with color doppler</div>
+            <div class="service-box yellow">Digital X-Rays</div>
+            <div class="service-box green">CT Angiography</div>
+            <div class="service-box blue">3D/4D Ultrasound</div>
+            <div class="service-box yellow">IVP</div>
+            <div class="service-box green">HRCT Temporal bone</div>
+            <div class="service-box blue">NT / NB Scan</div>
+            <div class="service-box yellow">HSG</div>
+            <div class="service-box green">Triphasic CT Liver</div>
+            <div class="service-box blue">Level 2 Scan</div>
+            <div class="service-box yellow">MCU, RGU</div>
+            <div class="service-box green">CT Virtual Broncoscopy / Colonoscopy</div>
+            <div class="service-box blue">Sono-mammography</div>
+            <div class="service-box yellow">Barium Swallow / BMFT / Barium Enema</div>
+            <div class="service-box green">CT Urography</div>
+            <div class="service-box blue">Orbit Eye / B-Scan</div>
+            <div class="service-box yellow">Sinography, Sialography</div>
+            <div class="service-box dg">Dental CBCT</div>
+            <div class="service-box blue">Carotid, Renal, Upper limb, Lower limb, Arterial and Venus Doppler</div>
+            <div class="service-box ly">Fully computerised laboratory  </div>
+            <div class="service-box dg">Digital Dental OPG</div>   
+            <div class="service-box blue">Trans Vaginal Sonography (TVS)</div>  
+            <div class="service-box ly">All kinds of blood-tests</div>    
+            <div class="service-box dg">Digital Ceph</div>   
+            <div class="service-box lb">2D / 3D Echocardiography</div>   
+            <div class="service-box s">Amniocentesis</div>   
+            <div class="service-box dg">Bilateral TM Joints</div>   
+            <div class="service-box lb">ECG</div>   
+            <div class="service-box s">Chorionic villi biopsy</div>   
+            
         </div>
         <div class="timings">
             <h2>Timings</h2>
-            <p><strong>Monday - Saturday:</strong> 10 AM - 8 PM</p>
+            <p><strong>Monday - Saturday:</strong> 9 AM - 8 PM</p>
             <p><strong>Sunday:</strong> 10 AM - 1 PM</p>
-            <p class="ct-badge">CT Scan Available 24 Hours</p>
+            <center><p class="ct-badge">CT Scan Emergency Available 24 Hours</p></center>
         </div>
         <div class="open-status" id="status"></div>
     </div>
     <div class="contact">
-        <p><i class="fas fa-phone"></i> Phone: +91-9417975707 | Reception: 01624-222753</p>
+        <p><i class="fas fa-phone"></i> Phone:- Emergency: +91-9417975707 | Reception: 01624-222753 | PRO: +91-9463675707 , +91-9478775707</p>
+        <p><i class="fa-solid fa-envelope"></i> Email us at: drmanavsdiagnosticcentre@gmail.com</p>
     </div>
+
+    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7415077.4878654415!2d68.8749178857394!3d24.841869078836403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39109d8189233aa1%3A0xe5a710ff03fdbe43!2sDr.%20Manav&#39;s%20Diagnostic%20Center%20-%20Best%20Diagnostic%20Center%2FCT-Scan%2FCT%20Angiography%2FX-Ray%20Center%2FBest%20Ultrasound%20Scan%20Center!5e0!3m2!1sen!2sin!4v1738999789822!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </center>
     <footer>
-        &copy; 2025 Dr. Manav Diagnostic Center.
+
+        &copy; 2025 Dr. Manav Diagnostic Center.Since 1993. 😁
     </footer>
     <script>
         function checkOpenStatus() {
@@ -161,7 +209,7 @@
             let hour = now.getHours();
             let open = false;
             
-            if ((day >= 1 && day <= 6 && hour >= 10 && hour < 20) || (day === 0 && hour >= 10 && hour < 13)) {
+            if ((day >= 1 && day <= 6 && hour >= 9 && hour < 20) || (day === 0 && hour >= 10 && hour < 13)) {
                 open = true;
             }
             
